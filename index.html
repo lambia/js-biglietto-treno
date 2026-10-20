@@ -10,13 +10,16 @@
 
 <body>
 	<h1>Calcolo biglietto treno</h1>
-	<input type="number" id="chilometri" autocomplete="off">
-	<select id="fascia-eta" autocomplete="off">
-		<option value="junior">Tariffa Junior (&lt;18)</option>
-		<option value="base" selected>Tariffa Base (18-64)</option>
-		<option value="senior">Tariffa Senior (&gt;64)</option>
-	</select>
-	<button id="calcola">Calcola</button>
+	<form id="biglietto-form">
+		<input type="number" id="chilometri" autocomplete="off">
+		<select id="fascia-eta" autocomplete="off">
+			<option value="junior">Tariffa Junior (&lt;18)</option>
+			<option value="base" selected>Tariffa Base (18-64)</option>
+			<option value="senior">Tariffa Senior (&gt;64)</option>
+		</select>
+		<button type="submit" id="calcola">Calcola</button>
+		<button type="reset" id="calcola">Reset</button>
+	</form>
 	<div id="costo-biglietto"></div>
 
 	<script src="main.js"></script>

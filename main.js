@@ -2,10 +2,13 @@ const inputChilometri = document.getElementById("chilometri");
 const btnCalcola = document.getElementById("calcola");
 const risultatoElement = document.getElementById("costo-biglietto");
 const selectFasciaEta = document.getElementById("fascia-eta");
+const formElement = document.getElementById("biglietto-form");
 
-btnCalcola.addEventListener("click", calcolaBiglietto);
+// btnCalcola.addEventListener("click", calcolaBiglietto);
+formElement.addEventListener("submit", calcolaBiglietto);
 
-function calcolaBiglietto() {
+function calcolaBiglietto(event) {
+	event.preventDefault();
 	// PREPARAZIONE
 	const tariffaBase = 0.21;
 
