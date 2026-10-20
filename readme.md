@@ -21,13 +21,13 @@ una select per la fascia d'età
 Modifichiamo l'evento per considerare l'età, applicare lo sconto e scrivere il risultato nel div.
 
 # MILESTONE 3:
-Stampate il prezzo arrotondando a 2 decimali dopo la virgola
-Se volete, racchiudete le input, select e button in un <form> e gestitene l'evento submit, invece del click sul bottone.
+Stampate il *prezzo arrotondando* a 2 decimali dopo la virgola
+Se volete, racchiudete le input, select e button in un *<form>* e gestitene l'evento submit, invece del click sul bottone.
 Aggiungete un input per il nome del viaggiatore
 Stampate un risultato che riporti nome, prezzo base, tariffa/età applicati, prezzo aggiornato
 
 # MILESTONE 4 - BONUS
-Potete aggiungere del CSS a piacimento e verificarvi di aver gestito eventuali errori come input vuote o non valide.
+Potete aggiungere del CSS a piacimento e verificarvi di aver gestito eventuali *errori* come input vuote o non valide.
 
 # NOTE
 E' davvero molto importante seguire l'ordine delle milestone.

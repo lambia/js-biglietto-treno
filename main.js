@@ -14,7 +14,7 @@ function calcolaBiglietto() {
 	const tariffa = selectFasciaEta.value;
 
 	// ELABORAZIONE: TARIFFA BASE
-	const costoBigliettoIniziale = chilometri * tariffaBase;
+	let costoBigliettoIniziale = chilometri * tariffaBase;
 
 	// ELABORAZIONE: PREZZO SCONTATO
 	let costoBigliettoFinale = costoBigliettoIniziale;
@@ -24,6 +24,10 @@ function calcolaBiglietto() {
 	} else if (tariffa == "senior") {
 		costoBigliettoFinale = costoBigliettoIniziale * 0.6;
 	}
+
+	// ELABORAZIONE: ARROTONDO I PREZZI
+	costoBigliettoIniziale = costoBigliettoIniziale.toFixed(2);
+	costoBigliettoFinale = costoBigliettoFinale.toFixed(2);
 
 	// ELABORAZIONE: PREPARO IL MESSAGGIO PER L'UTENTE
 	let msg = `Il costo del biglietto era ${costoBigliettoIniziale} € ma pagherai ${costoBigliettoFinale} €`;
