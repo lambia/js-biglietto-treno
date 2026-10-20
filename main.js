@@ -13,8 +13,13 @@ function calcolaBiglietto(event) {
 	const tariffaBase = 0.21;
 
 	// INPUT
-	const chilometri = inputChilometri.value;
+	const chilometri = Number(inputChilometri.value);
 	const tariffa = selectFasciaEta.value;
+
+	if (inputChilometri.value == "" || isNaN(chilometri)) {
+		risultatoElement.innerText = "Si è verificato un errore";
+		return;
+	}
 
 	// ELABORAZIONE: TARIFFA BASE
 	let costoBigliettoIniziale = chilometri * tariffaBase;
