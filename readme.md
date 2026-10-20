@@ -27,7 +27,7 @@ Aggiungete un input per il nome del viaggiatore
 Stampate un risultato che riporti nome, prezzo base, tariffa/età applicati, prezzo aggiornato
 
 # MILESTONE 4 - BONUS
-Potete aggiungere del CSS a piacimento e verificarvi di aver gestito eventuali *errori* come input vuote o non valide.
+Potete aggiungere del CSS a piacimento e verificarvi di aver gestito eventuali errori come input vuote o non valide.
 
 # NOTE
 E' davvero molto importante seguire l'ordine delle milestone.
